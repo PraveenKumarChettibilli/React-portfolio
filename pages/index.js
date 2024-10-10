@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Typical from 'react-typical';
+import { TypeAnimation } from 'react-type-animation';
 import {
   AiFillLinkedin,
   AiFillGithub,
@@ -58,16 +58,18 @@ export default function Home() {
               Praveen kumar Chettibilli
             </h2>
             <h3 className="text-2xl py-2 dark:text-white md:text-3xl">
-  <Typical
-    steps={[
-      'UX Designer', 2000,
+  <TypeAnimation
+  sequence={[
+    // Same substring at the start will only be typed once, initially
+    'UX Designer', 2000,
       'Photographer', 2000,
       'Developer', 2000,
       'Good Friend', 2000
-    ]}
-    loop={Infinity}
-    wrapper="span"
-  />
+  ]}
+  speed={50}
+  style={{ fontSize: '1em' }}
+  repeat={Infinity}
+/>
 </h3>
             <p className="text-md py-5 leading-8 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-xl">
             An enthusiastic Full Stack Developer with a passion for building efficient, scalable web applications. 
