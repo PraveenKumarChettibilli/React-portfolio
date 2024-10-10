@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Typewriter from 'react-typewriter';
+import Typical from 'react-typical';
 import {
   AiFillLinkedin,
   AiFillGithub,
@@ -57,11 +57,18 @@ export default function Home() {
             <h2 className="text-5xl py-2 text-violet-600 font-medium dark:text-violet-400 md:text-6xl">
               Praveen kumar Chettibilli
             </h2>
-            <h3 className="text-2xl py-2 dark:text-white md:text-3xl transition-smooth">
-              <Typewriter typing={1}>
-                UX Designer, Photographer, Developer, Good Friend
-              </Typewriter>
-            </h3>
+            <h3 className="text-2xl py-2 dark:text-white md:text-3xl">
+  <Typical
+    steps={[
+      'UX Designer', 2000,
+      'Photographer', 2000,
+      'Developer', 2000,
+      'Good Friend', 2000
+    ]}
+    loop={Infinity}
+    wrapper="span"
+  />
+</h3>
             <p className="text-md py-5 leading-8 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-xl">
             An enthusiastic Full Stack Developer with a passion for building efficient, scalable web applications. 
             With hands-on experience in Angular, .NET Core, and AWS, I enjoy solving complex problems and creating intuitive user experiences. 
