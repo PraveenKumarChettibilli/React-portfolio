@@ -1,5 +1,6 @@
 import Head from "next/head";
 import { TypeAnimation } from 'react-type-animation';
+import { HiArrowRight } from "react-icons/hi2";
 import {
   AiFillLinkedin,
   AiFillGithub,
@@ -7,7 +8,8 @@ import {
 } from "react-icons/ai";
 import { FaReact } from 'react-icons/fa';
 import { 
-  SiReact, SiAngular, SiHeroku, SiAmazonaws, SiDigitalocean, SiNodedotjs, SiNextdotjs, SiTailwindcss, SiSass, SiMysql, SiMongodb, SiPostgresql, SiMicrosoftazure, SiSwagger
+  SiReact, SiAngular, SiHeroku, SiAmazonaws, SiDigitalocean, SiNodedotjs, SiNextdotjs, SiTailwindcss, SiSass, SiMysql, SiMongodb, SiPostgresql, SiMicrosoftazure, SiSwagger,
+  SiPointy
 } from 'react-icons/si'
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { useState } from "react";
@@ -61,10 +63,11 @@ export default function Home() {
   <TypeAnimation
   sequence={[
     // Same substring at the start will only be typed once, initially
-    'UX Designer', 2000,
-      'Photographer', 2000,
-      'Developer', 2000,
-      'Good Friend', 2000
+      'Cloud Developer', 2000,
+      'Frontend Developer', 2000,
+      'Backend Developer', 2000,
+      'UX Designer', 2000,
+      'AI/ML Enthusiast', 2000
   ]}
   speed={50}
   style={{ fontSize: '1em' }}
@@ -195,53 +198,56 @@ export default function Home() {
             </p>
           </div>
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
-          <div className="flex flex-wrap justify-center items-center space-x-10 text-center space-y-10">
-          <a className="text-blue-600 hover:text-blue-800">
-            <SiReact size={55} /> React
-          </a>
-          <a className="text-red-600 hover:text-red-800">
-            <SiAngular size={55} /> Angular
-          </a>
-          <a className="text-purple-600 hover:text-purple-800">
-            <SiHeroku size={55} /> Heroku
-          </a>
-          <a className="text-orange-600 hover:text-orange-800">
-            <SiAmazonaws size={55} /> AWS
-          </a>
-          <a className="text-blue-500 text-center hover:text-blue-700">
-            <SiDigitalocean size={55} /> Digital Ocean
-          </a>
-          <a className="text-green-600 hover:text-green-800">
-            <SiNodedotjs size={55} /> Node.js
-          </a>
-      <a className="text-black hover:text-gray-800 dark:text-white">
-        <AiFillGithub size={55} /> Github
-      </a>
-      <a className="text-black hover:text-gray-800 dark:text-white">
-        <SiNextdotjs size={55} /> next.js
-      </a>
-      <a className="text-blue-400 hover:text-blue-600">
-        <SiTailwindcss size={55} /> Tailwindcss
-      </a>
-      <a className="text-pink-500 hover:text-pink-700">
-        <SiSass size={55} /> SASS
-      </a>
-      <a className="text-blue-600 hover:text-blue-800">
-        <SiMysql size={55} /> MySQL
-      </a>
-      <a className="text-green-600 hover:text-green-800">
-        <SiMongodb size={55} /> MongoDB
-      </a>
-      <a className="text-blue-600 hover:text-blue-800">
-        <SiPostgresql size={55} /> PostgreSQL
-      </a>
-      <a className="text-blue-500 hover:text-blue-700">
-        <SiMicrosoftazure size={55} /> Azure
-      </a>
-      <a className="text-black hover:text-gray-800 dark:text-white">
-        <SiSwagger size={55} /> Swagger
-      </a>
-          </div>
+            <div className="flex flex-wrap justify-center items-center space-x-10 text-center space-y-10">
+            <a className="text-blue-600 hover:text-blue-800">
+                <HiArrowRight size={45} />
+              </a>
+              <a className="text-blue-600 hover:text-blue-800">
+                <SiReact size={55} /> React
+              </a>
+              <a className="text-red-600 hover:text-red-800">
+                <SiAngular size={55} /> Angular
+              </a>
+              <a className="text-purple-600 hover:text-purple-800">
+                <SiHeroku size={55} /> Heroku
+              </a>
+              <a className="text-orange-600 hover:text-orange-800">
+                <SiAmazonaws size={55} /> AWS
+              </a>
+              <a className="text-blue-500 text-center hover:text-blue-700">
+                < SiDigitalocean size={55} /> Digital Ocean
+              </a>
+              <a className="text-green-600 hover:text-green-800">
+                <SiNodedotjs size={55} /> Node.js
+              </a>
+              <a className="text-black hover:text-gray-800 dark:text-white">
+                <AiFillGithub size={55} /> Github
+              </a>
+              <a className="text-black hover:text-gray-800 dark:text-white">
+                <SiNextdotjs size={55} /> next.js
+              </a>
+              <a className="text-blue-400 hover:text-blue-600">
+                <SiTailwindcss size={55} /> Tailwindcss
+              </a>
+              <a className="text-pink-500 hover:text-pink-700">
+                <SiSass size={55} /> SASS
+              </a>
+              <a className="text-blue-600 hover:text-blue-800">
+                <SiMysql size={55} /> MySQL
+              </a>
+              <a className="text-green-600 hover:text-green-800">
+                <SiMongodb size={55} /> MongoDB
+              </a>
+              <a className="text-blue-600 hover:text-blue-800">
+                <SiPostgresql size={55} /> PostgreSQL
+              </a>
+              <a className="text-blue-500 hover:text-blue-700">
+                <SiMicrosoftazure size={55} /> Azure
+              </a>
+              <a className="text-black hover:text-gray-800 dark:text-white">
+                <SiSwagger size={55} /> Swagger
+              </a>
+            </div>
             {/* <div className="basis-1/3 flex-1 ">
               <Image
                 className="rounded-lg object-cover"
