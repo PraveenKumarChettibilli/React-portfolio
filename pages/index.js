@@ -49,7 +49,7 @@ export default function Home() {
               <li>
                 <a
                   className="bg-gradient-to-r from-violet-500 text- to-violet-500 text-white px-4 py-2 border-none rounded-md ml-8"
-                  href="../public/New Updated Resume.pdf" download>
+                  href="/public/Praveen_kumar_Chettibilli_Resume.pdf" download>
                   Resume
                 </a>
               </li>
