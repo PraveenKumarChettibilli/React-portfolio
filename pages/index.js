@@ -111,7 +111,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="py-12 px-6 bg-transparent text-white">
+        <section className="py-12 px-6 bg-transparent dark:text-white">
   <div className="max-w-6xl mx-auto flex flex-col md:flex-row gap-12">
     {/* Work Experience Section */}
     <div className="w-full md:w-1/2">
