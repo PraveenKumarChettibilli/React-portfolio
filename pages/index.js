@@ -8,7 +8,7 @@ import {
 } from "react-icons/ai";
 import { FaReact } from 'react-icons/fa';
 import { 
-  SiReact, SiAngular, SiHeroku, SiAmazonaws, SiDigitalocean, SiNodedotjs, SiNextdotjs, SiTailwindcss, SiSass, SiMysql, SiMongodb, SiPostgresql, SiMicrosoftazure, SiSwagger,
+  SiDotnet, SiReact, SiAngular, SiHeroku, SiAmazonaws, SiDigitalocean, SiNodedotjs, SiNextdotjs, SiTailwindcss, SiSass, SiMysql, SiMongodb, SiPostgresql, SiMicrosoftazure, SiSwagger,
   SiPointy
 } from 'react-icons/si'
 import { BsFillMoonStarsFill } from "react-icons/bs";
@@ -46,13 +46,13 @@ export default function Home() {
                   className=" cursor-pointer text-2xl"
                 />
               </li>
-              <li>
+              {/* <li>
                 <a
                   className="bg-gradient-to-r from-violet-500 text- to-violet-500 text-white px-4 py-2 border-none rounded-md ml-8"
                   href="/public/Praveen_kumar_Chettibilli_Resume.pdf" download>
                   Resume
                 </a>
-              </li>
+              </li> */}
             </ul>
           </nav>
           <div className="text-center p-10 py-10">
@@ -63,6 +63,9 @@ export default function Home() {
   <TypeAnimation
   sequence={[
     // Same substring at the start will only be typed once, initially
+      '.NET Developer', 2000,
+      'Full Stack Developer', 2000,
+      'Software Engineer', 2000,  
       'Cloud Developer', 2000,
       'Frontend Developer', 2000,
       'Backend Developer', 2000,
@@ -76,12 +79,12 @@ export default function Home() {
 </h3>
             <p className="text-md py-5 leading-8 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-xl">
             An enthusiastic Full Stack Developer with a passion for building efficient, scalable web applications. 
-            With hands-on experience in Angular, .NET Core, and AWS, I enjoy solving complex problems and creating intuitive user experiences. 
+            With hands-on experience in Angular/React, .NET Core, and AWS/Azure, I enjoy solving complex problems and creating intuitive user experiences. 
             Let’s connect to turn innovative ideas into reality!
             </p>
             <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
             <a 
-      href="https://www.linkedin.com/in/praveen-kumar-chettibilli" 
+      href="https://www.linkedin.com/in/praveenc09" 
       target="_blank" 
       rel="noopener noreferrer" 
     >
@@ -95,7 +98,7 @@ export default function Home() {
       <AiFillGithub size={50} />
     </a>
     <a 
-      href="mailto:praveenkumar.chettibilli@gmail.com" 
+      href="mailto:praveen.chettibilli@gmail.com" 
       target="_blank" 
       rel="noopener noreferrer" 
     >
@@ -107,6 +110,50 @@ export default function Home() {
             </div>
           </div>
         </section>
+
+        <section className="py-12 px-6 bg-transparent text-white">
+  <div className="max-w-6xl mx-auto flex flex-col md:flex-row gap-12">
+    {/* Work Experience Section */}
+    <div className="w-full md:w-1/2">
+      <h2 className="text-3xl font-bold mb-6">Work Experience</h2>
+      <div className="space-y-4">
+        <div className="border-l-4 border-gold pl-4">
+          <h3 className="text-xl font-semibold">Software Engineer</h3>
+          <p className="text-sm text-gray-400 pb-4">University of North Carolina at Charlotte | August 2023 - December 2024</p>
+          <p>Tech Stack: React, .NET 6, Azure Cloud.</p>
+        </div>
+        <div className="border-l-4 border-gold pl-4">
+          <h3 className="text-xl font-semibold">Full Stack Developer</h3>
+          <p className="text-sm text-gray-400 pb-4">Infosys | September 2021 - July 2023</p>
+          <p>Tech Stack: .NET Core, C#, AWS, Angular, Microsoft SQL, BitBucket.</p>
+        </div>
+        <div className="border-l-4 border-gold pl-4">
+          <h3 className="text-xl font-semibold">Associate Software Engineer</h3>
+          <p className="text-sm text-gray-400 pb-4">Infosys | January 2021 - July 2021</p>
+          <p>Tech Stack: Angular, .NET Core, Git, Jasmine, Azure DevOps.</p>
+        </div>
+      </div>
+    </div>
+
+    {/* Education Section */}
+    <div className="w-full md:w-1/2">
+      <h2 className="text-3xl font-bold mb-6">Education</h2>
+      <div className="space-y-4">
+        <div className="border-l-4 border-gold pl-4">
+          <h3 className="text-xl font-semibold">Masters in Information Technology</h3>
+          <p className="text-sm text-gray-400">University of North Carolina, Charlotte | 2024</p>
+        </div>
+        {/* <div className="border-l-4 border-gold pl-4">
+          <h3 className="text-xl font-semibold">Bachelor's in Computer Science</h3>
+          <p className="text-sm text-gray-400">XYZ University | 2020</p>
+        </div> */}
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
         <section>
           <div>
             <h3 className="mx-auto text-center text-3xl py-10 dark:text-white ">PROJECTS</h3>
@@ -201,6 +248,9 @@ export default function Home() {
             <div className="flex flex-wrap justify-center items-center space-x-10 text-center space-y-10">
             <a className="text-blue-600 hover:text-blue-800">
                 <HiArrowRight size={45} />
+              </a>
+              <a className="text-black hover:text-gray-800 dark:text-white">
+                <SiDotnet size={55} /> .NET
               </a>
               <a className="text-blue-600 hover:text-blue-800">
                 <SiReact size={55} /> React
