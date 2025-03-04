@@ -13,7 +13,14 @@ import {
 } from 'react-icons/si'
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { useState } from "react";
+import pkc from "../public/pkc.png";
+
 import icon from "../public/icon.png";
+
+import climate from "../public/climate.png";
+import budget from "../public/budget.png";
+import blog from "../public/blog.png";
+
 import code from "../public/code.png";
 import design from "../public/design.png";
 import consulting from "../public/consulting.png";
@@ -106,7 +113,7 @@ export default function Home() {
     </a>
             </div>
             <div className="mx-auto bg-gradient-to-b from-violet-500 rounded-full w-80 h-80 relative overflow-hidden mt-20 md:h-96 md:w-96">
-              <Image src={icon} layout="fill" objectFit="cover" />
+              <Image src={pkc} layout="fill" objectFit="cover" />
             </div>
           </div>
         </section>
@@ -172,7 +179,7 @@ export default function Home() {
           </div>
           <div className="lg:flex gap-10">
             <div className="text-center shadow-lg p-10 rounded-xl my-10  dark:bg-white flex-1">
-              <Image src={design} width={100} height={100} />
+              <Image src={budget} width={100} height={100} />
               <h3 className="text-lg font-medium pt-8 pb-2 font-bold ">
                 Personal-budget-management
               </h3>
@@ -190,7 +197,7 @@ export default function Home() {
               </a>
             </div>
             <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
-              <Image src={code} width={100} height={100} />
+              <Image src={climate} width={100} height={100} />
               <h3 className="text-lg font-medium pt-8 pb-2 font-bold">
               Climate Data Analysis System Using MapReduce and Hive
               </h3>
@@ -208,7 +215,7 @@ export default function Home() {
               </a>
             </div>
             <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
-              <Image src={consulting} width={100} height={100} />
+              <Image src={blog} width={100} height={100} />
               <h3 className="text-lg font-medium pt-8 pb-2 font-bold"> V Blog </h3>
               <p className="py-2 text-left">
               A full-stack web application for a university blog using Django and MySQL, enabling the posting of
