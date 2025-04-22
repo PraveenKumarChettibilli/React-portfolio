@@ -148,7 +148,7 @@ export default function Home() {
       <div className="space-y-4">
         <div className="border-l-4 border-gold pl-4">
           <h3 className="text-xl font-semibold">Masters in Information Technology</h3>
-          <p className="text-sm text-gray-400">University of North Carolina, Charlotte | 2024</p>
+          <p className="text-sm text-gray-400">University of North Carolina, Charlotte | December 2024</p>
         </div>
         {/* <div className="border-l-4 border-gold pl-4">
           <h3 className="text-xl font-semibold">Bachelor's in Computer Science</h3>
