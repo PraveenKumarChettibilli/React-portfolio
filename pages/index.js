@@ -126,7 +126,7 @@ export default function Home() {
       <div className="space-y-4">
         <div className="border-l-4 border-gold pl-4">
           <h3 className="text-xl font-semibold">Software Engineer</h3>
-          <p className="text-sm text-gray-400 pb-4">University of North Carolina at Charlotte | August 2023 - December 2024</p>
+          <p className="text-sm text-gray-400 pb-4">University of North Carolina at Charlotte | January 2024 - December 2024</p>
           <p>Tech Stack: React, .NET 6, Azure Cloud.</p>
         </div>
         <div className="border-l-4 border-gold pl-4">
@@ -136,7 +136,7 @@ export default function Home() {
         </div>
         <div className="border-l-4 border-gold pl-4">
           <h3 className="text-xl font-semibold">Associate Software Engineer</h3>
-          <p className="text-sm text-gray-400 pb-4">Infosys | January 2021 - July 2021</p>
+          <p className="text-sm text-gray-400 pb-4">SLK Software Solutions | May 2020 - July 2021</p>
           <p>Tech Stack: Angular, .NET Core, Git, Jasmine, Azure DevOps.</p>
         </div>
       </div>
